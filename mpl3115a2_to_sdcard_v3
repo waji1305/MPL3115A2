@@ -38,7 +38,7 @@ File mySensorData; //Data object you will write your sensor data to
 void setup(){
   Serial.begin(9600); //turn on serial monitor
   while(!Serial);
-  Serial.println("Adafruit_MPL3115A2 good to go!");
+  Serial.println("MPL3115A2_sensor good");
 
   if (!mySensor.begin()) {
     Serial.println("Could not find sensor. Check wiring.");
@@ -49,12 +49,16 @@ void setup(){
   pinMode(10, OUTPUT); //Must declare 10 an output and reserve it
   SD.begin(4); //Initialize the SD card reader
   
-  Serial.print("Initializing SD card...");
+  Serial.println("Initializing SD card...");
   if (!SD.begin(4)) {
-    Serial.println("Initialization failed!");
+    Serial.println("Initialization failed! Things to check:");
+    Serial.println("1. is a card inserted?");
+    Serial.println("2. is your wiring correct?");
+    Serial.println("3. did you change the chipSelect pin to match your shield or module?");
+    Serial.println("Note: press reset button on the board and reopen this Serial Monitor after fixing your issue!");
     while (1);
   }
-  Serial.println("Initialization done.");
+  Serial.println("SD card good");
   
 
   // use to set sea level pressure for current location
@@ -86,10 +90,15 @@ void loop() {
   
   
   mySensorData.print(pressure);                        //write pressure data to card
-  mySensorData.print(", ");                            //write a commma
+  mySensorData.print("hPa, ");                         //write hPa and a commma
   mySensorData.print(altitude);                        //write altitude data to card
-  mySensorData.print(", ");                            //write a commma
-  mySensorData.println(temperature);                   //write temperature and end the line (println)
+  mySensorData.print("m, ");                           //write m and a commma
+  mySensorData.print(altitude * 3.28084);              //write height data to card
+  mySensorData.print("ft, ");                          //write ft and a commma
+  mySensorData.print(temperature);                     //write tempC data to card
+  mySensorData.print("C, ");                           //write C and a commma
+  mySensorData.print((temperature * 9/5) + 32);        //write tempF and end the line (println)
+  mySensorData.println("F ");                         //write F and a commma
   mySensorData.close();                                //close the file
   }
 }
