@@ -15,7 +15,7 @@ This program is to store data (pressure, altitude, temperature) from MPL3115A2 s
 - [Connecting the sd card reader](https://toptechboy.com/arduino-lesson-21-log-sensor-data-to-an-sd-card/#:~:text=Connecting%20the%20SD%20Card%20Reader)
 
 ## Pictures
-![datalog_sdcard](https://user-images.githubusercontent.com/90513151/175801166-2c7e1fc3-937c-476e-9bd5-dfe8c00a9d15.PNG)
+![datalog_sdcard](https://user-images.githubusercontent.com/90513151/175801544-11ff33c5-fd46-4e42-afb1-b98c763a5a8d.PNG)
 *datalog_sdcard*
 ##      
 ![serial_monitor](https://user-images.githubusercontent.com/90513151/175801169-acd816a5-2c59-4be7-b3ba-260ad0eafe00.PNG)  
