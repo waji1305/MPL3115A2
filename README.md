@@ -1,5 +1,5 @@
-## Description
-This program is to store data (pressure, altitude, temperature) from MPL3115A2 sensor to sd card. I share this because I can't find any tutorial to log the data from this particular sensor to an sd card.
+## Description :flying_saucer:	
+This program is to store data (pressure, altitude, temperature) from MPL3115A2 sensor to sd card. I share this because I can't find any tutorial to log the data from this particular sensor to an sd card. I hope this would be helpful to someone out there.:crossed_fingers:
 
 ## Hardware
 - [Maker Nano (Compatible with Original Arduino Nano)](https://my.cytron.io/p-maker-nano-simplifying-arduino-for-projects?ref=zyxHpdx3&search=maker%20nano)
@@ -21,7 +21,7 @@ This program is to store data (pressure, altitude, temperature) from MPL3115A2 s
 ![serial_monitor](https://user-images.githubusercontent.com/90513151/175801169-acd816a5-2c59-4be7-b3ba-260ad0eafe00.PNG)  
 *serial_monitor*
 
-## Contributing
+## Contributing :rocket:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
@@ -32,5 +32,5 @@ Please make sure to update tests as appropriate.
 ## Credits
 [toptechboy.com](https://toptechboy.com/arduino-lesson-21-log-sensor-data-to-an-sd-card/)
 
-## Contact
+## Contact :email:	
 wajihuddin6060@gmail.com
